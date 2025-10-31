@@ -135,3 +135,22 @@ nav a:hover, nav a.active {
   nav ul { flex-direction: column; gap: 10px; }
   .hero { margin-top: 80px; }
 }
+
+* --- Fix Game Menu on Mobile --- */
+  .game-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .game-menu button {
+    width: 80%;
+    max-width: 300px;
+    font-size: 1em;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+  }
+}
