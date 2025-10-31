@@ -131,46 +131,45 @@ nav a:hover, nav a.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---- RESPONSIVE (ONLY CHANGE BELOW) ---- */
+/* ---- RESPONSIVE (ONLY HEADER FIXED HERE) ---- */
 @media (max-width: 768px) {
-  /* Stack header content neatly */
+  /* Keep desktop header layout */
   header {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-  }
-
-  .header-left,
-  .header-center,
-  .header-right {
-    text-align: center;
-    margin: 5px 0;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
+    padding: 10px 20px;
   }
 
   .logo {
-    width: 55px;
-    height: 55px;
-    margin-top: 8px;
+    width: 50px;
+    height: 50px;
   }
 
-  /* Hero section */
+  .logo-text {
+    font-size: 1.4em;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 0.9em;
+  }
+
+  /* Slightly tighter hero section for mobile */
   .hero {
-    margin-top: 70px;
+    margin-top: 80px;
     padding: 0 10px;
   }
 
   .quote {
-    font-size: 1.4em;
-    line-height: 1.4em;
+    font-size: 1.5em;
+    line-height: 1.3em;
   }
 
-  /* Game section - clean vertical layout */
+  /* Game section stacked neatly */
   .btn {
     width: 85%;
     max-width: 300px;
