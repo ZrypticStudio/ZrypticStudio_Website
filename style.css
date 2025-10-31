@@ -26,8 +26,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  flex-wrap: wrap;
   backdrop-filter: blur(6px);
+  flex-wrap: wrap;
 }
 
 .logo-text {
@@ -35,23 +35,17 @@ header {
   font-weight: 700;
   color: #1f6feb;
   letter-spacing: 2px;
-  flex: 1;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .header-center {
-  flex: 1;
   text-align: center;
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   filter: drop-shadow(0 0 8px #1f6feb);
-}
-
-.header-right {
-  flex: 1;
-  text-align: right;
 }
 
 nav ul {
@@ -59,8 +53,6 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   gap: 25px;
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
@@ -195,33 +187,34 @@ footer {
   header {
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    text-align: center;
+    padding: 15px 10px;
   }
 
   .logo-text {
     font-size: 1.6em;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-
-  .header-center {
-    order: -1;
     margin-bottom: 10px;
   }
 
-  .header-right {
-    width: 100%;
-    text-align: center;
+  .header-center {
+    margin: 10px 0;
+  }
+
+  .logo {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin-top: 10px;
   }
 
   nav a {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .hero h1 {
