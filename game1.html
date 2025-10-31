@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game 1 - Zryptic Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .game1-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      color: #dce3f0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .game-logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 25px #1f6feb);
+      animation: glowPulse 3s infinite ease-in-out;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 15px #1f6feb);
+        transform: scale(1);
+      }
+      50% {
+        filter: drop-shadow(0 0 35px #1f6feb);
+        transform: scale(1.05);
+      }
+    }
+
+    .game-title {
+      font-size: 2em;
+      color: #1f6feb;
+      margin-bottom: 20px;
+    }
+
+    .game-description {
+      max-width: 600px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #c8d6e5;
+      text-shadow: 0 0 10px rgba(31, 111, 235, 0.2);
+    }
+
+    .coming-soon {
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #1f6feb;
+      font-weight: bold;
+      text-shadow: 0 0 10px #1f6feb;
+    }
+  </style>
+</head>
+<body class="dark-bg">
+  <header>
+    <div class="header-left">
+      <h1 class="logo-text">Zryptic Studio</h1>
+    </div>
+
+    <div class="header-center">
+      <img src="logo.png" alt="Zryptic Logo" class="logo" />
+    </div>
+
+    <nav class="header-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="game1-container">
+      <!-- 🔱 Game-specific logo -->
+      <img src="game1_logo.png" alt="Game 1 Logo" class="game-logo">
+
+      <!-- 🎮 Game title and details -->
+      <p class="game-description">
+        Marcus wakes up in an Unknown Ward <strong>Φ</strong> with no memory of how he got there.
+        Explore and question reality itself in a Surreal and Cryptic Experience where 
+        Symbols speak louder than words, and silence hides the truth.
+        Every corner you explore reveals another layer of Mystery in this Dark Psychological Horror Journey.
+      </p>
+
+      <p class="coming-soon">Coming 2027</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

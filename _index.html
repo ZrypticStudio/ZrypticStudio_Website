@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zryptic Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="home-bg">
+  <header>
+    <div class="header-left">
+      <h1 class="logo-text">Zryptic Studio</h1>
+    </div>
+
+    <div class="header-center">
+      <img src="logo.png" alt="Zryptic Logo" class="logo" />
+    </div>
+
+    <nav class="header-right">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="quote">"Forging Worlds, One Pixel at a Time"</h2>
+      <button class="btn" id="showGamesBtn">Upcoming Games</button>
+      <div class="game-menu" id="gameMenu">
+        <button onclick="window.location.href='game1.html'">Φ</button>
+        <button onclick="window.location.href='game2.html'">Antvenure</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
