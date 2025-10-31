@@ -1,3 +1,4 @@
+/* ---- GENERAL ---- */
 body {
   margin: 0;
   padding: 0;
@@ -104,12 +105,13 @@ nav a:hover, nav a.active {
   display: none;
   margin-top: 20px;
   animation: fadeIn 0.5s ease-in;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
-.game-menu.visible { display: block; }
+.game-menu.visible { display: flex; }
 
 .game-menu button {
-  display: block;
-  margin: 10px auto;
   padding: 10px 25px;
   background: transparent;
   color: #fff;
@@ -129,14 +131,53 @@ nav a:hover, nav a.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---- RESPONSIVE ---- */
+/* ---- RESPONSIVE (ONLY CHANGE BELOW) ---- */
 @media (max-width: 768px) {
-  header { flex-direction: column; }
-  nav ul { flex-direction: column; gap: 10px; }
-  .hero { margin-top: 80px; }
-}
+  /* Stack header content neatly */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
 
-* --- Fix Game Menu on Mobile --- */
+  .header-left,
+  .header-center,
+  .header-right {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+    margin-top: 8px;
+  }
+
+  /* Hero section */
+  .hero {
+    margin-top: 70px;
+    padding: 0 10px;
+  }
+
+  .quote {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  /* Game section - clean vertical layout */
+  .btn {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
   .game-menu {
     flex-direction: column;
     align-items: center;
@@ -144,13 +185,8 @@ nav a:hover, nav a.active {
   }
 
   .game-menu button {
-    width: 80%;
+    width: 85%;
     max-width: 300px;
     font-size: 1em;
-  }
-
-  .btn {
-    width: 80%;
-    max-width: 300px;
   }
 }
