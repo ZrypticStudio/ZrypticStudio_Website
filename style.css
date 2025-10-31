@@ -100,16 +100,22 @@ nav a:hover, nav a.active {
   box-shadow: 0 0 20px #1f6feb;
 }
 
-/* ---- GAME MENU ---- */
+/* ---- GAME MENU (Dropdown) ---- */
 .game-menu {
-  display: none;
-  margin-top: 20px;
-  animation: fadeIn 0.5s ease-in;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
 }
-.game-menu.visible { display: flex; }
+
+.game-menu.visible {
+  max-height: 500px; /* expand height */
+  transition: max-height 0.5s ease-in;
+}
 
 .game-menu button {
   padding: 10px 25px;
@@ -131,9 +137,8 @@ nav a:hover, nav a.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---- RESPONSIVE (ONLY HEADER FIXED HERE) ---- */
+/* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
-  /* Keep desktop header layout */
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -158,7 +163,6 @@ nav a:hover, nav a.active {
     font-size: 0.9em;
   }
 
-  /* Slightly tighter hero section for mobile */
   .hero {
     margin-top: 80px;
     padding: 0 10px;
@@ -169,18 +173,11 @@ nav a:hover, nav a.active {
     line-height: 1.3em;
   }
 
-  /* Game section stacked neatly */
   .btn {
     width: 85%;
     max-width: 300px;
     margin: 0 auto;
     display: block;
-  }
-
-  .game-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
   }
 
   .game-menu button {
