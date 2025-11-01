@@ -281,19 +281,3 @@ nav a:hover, nav a.active {
     display: none;
   }
 }
-
-/* --- GLOBAL FIX for horizontal overflow (white borders) --- */
-html, body {
-  overflow-x: hidden !important;
-  width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-  max-width: 100vw;
-}
-
-header, section, footer, nav, .hero {
-  overflow-x: hidden;
-  max-width: 100%;
-}
