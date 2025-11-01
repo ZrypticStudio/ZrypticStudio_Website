@@ -270,6 +270,7 @@ nav a:hover, nav a.active {
     font-size: 1.1em;
   }
 }
+
 /* --- FIX: hide checkbox on desktop completely --- */
 #menu-toggle {
   display: none !important;
@@ -280,4 +281,20 @@ nav a:hover, nav a.active {
   label[for="menu-toggle"] {
     display: none;
   }
+}
+
+/* --- GLOBAL FIX for horizontal overflow (white borders) --- */
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+header, section, footer, nav, .hero {
+  overflow-x: hidden;
+  max-width: 100%;
 }
