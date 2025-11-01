@@ -114,7 +114,6 @@ nav a:hover, nav a.active {
   margin-top: 15px;
 }
 
-/* Dropdown visible with fade + glow */
 .game-menu.visible {
   max-height: 500px;
   opacity: 1;
@@ -122,7 +121,6 @@ nav a:hover, nav a.active {
   animation: dropdownGlow 0.8s ease forwards;
 }
 
-/* Game buttons as glowing text only */
 .game-menu button {
   background: none;
   border: none;
@@ -156,9 +154,10 @@ nav a:hover, nav a.active {
 @media (max-width: 768px) {
   header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
+    position: relative;
   }
 
   .logo {
@@ -168,14 +167,6 @@ nav a:hover, nav a.active {
 
   .logo-text {
     font-size: 1.4em;
-  }
-
-  nav ul {
-    gap: 15px;
-  }
-
-  nav a {
-    font-size: 0.9em;
   }
 
   .hero {
@@ -199,5 +190,74 @@ nav a:hover, nav a.active {
     width: 85%;
     max-width: 300px;
     font-size: 1.1em;
+  }
+
+  /* --- MOBILE HEADER POLISH --- */
+  header {
+    justify-content: center;
+  }
+
+  .header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Hamburger icon */
+  label[for="menu-toggle"] {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+  }
+
+  label[for="menu-toggle"] span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #1f6feb;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  #menu-toggle {
+    display: none !important;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(10, 15, 35, 0.95);
+    border: 1px solid #1f6feb;
+    border-radius: 8px;
+    padding: 15px 0;
+    gap: 12px;
+    width: 80%;
+    margin: 60px auto 0;
+    box-shadow: 0 0 15px rgba(31, 111, 235, 0.3);
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  #menu-toggle:checked + label + nav ul {
+    display: flex;
+  }
+}
+/* --- FIX: hide checkbox on desktop completely --- */
+#menu-toggle {
+  display: none !important;
+}
+
+/* Ensure hamburger only shows on mobile */
+@media (min-width: 769px) {
+  label[for="menu-toggle"] {
+    display: none;
   }
 }
