@@ -11,12 +11,17 @@ html, body {
   max-width: 100%;
   background-attachment: fixed;
   box-sizing: border-box;
+
+  /* ✅ FIX SAFARI & MOBILE WHITE BORDER ISSUE */
+  min-height: 100vh;
+  min-height: 100dvh; /* Use dynamic viewport height for Safari */
 }
 
 /* Ensure every section fills the screen like Contact Us */
 section, main, .content-wrapper {
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh; /* ✅ fix for mobile landscape mode */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -248,6 +253,7 @@ nav a:hover, nav a.active {
     top: 0;
     left: 0;
     height: 100vh;
+    height: 100dvh; /* ✅ make sure the menu also covers full screen */
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -308,6 +314,7 @@ nav a:hover, nav a.active {
     display: none;
   }
 }
+
 /* ---- FIX FULL SCREEN WHITE BORDER ISSUE ---- */
 html, body {
   height: 100%;
@@ -318,7 +325,8 @@ html, body {
 .home-bg,
 .dark-bg,
 .green-bg {
-  min-height: 100vh;  /* Fill full screen vertically */
+  min-height: 100vh;
+  min-height: 100dvh; /* ✅ dynamic height fix for Safari & landscape */
   width: 100%;
   margin: 0;
   padding: 0;
