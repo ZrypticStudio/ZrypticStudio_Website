@@ -6,7 +6,15 @@
   <title>Φ - Zryptic Studio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Seamless Background Fix -->
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     .game1-container {
       display: flex;
       flex-direction: column;
@@ -59,6 +67,7 @@
     }
   </style>
 </head>
+
 <body class="dark-bg">
   <header>
     <div class="header-left">
@@ -87,10 +96,8 @@
 
   <main>
     <div class="game1-container">
-      <!-- 🔱 Game-specific logo -->
       <img src="game1_logo.png" alt="Game 1 Logo" class="game-logo">
 
-      <!-- 🎮 Game title and details -->
       <p class="game-description">
         Mark wakes up in an Unknown Ward <strong>Φ</strong> with no memory of him getting there.
         Explore and question Reality itself in a Surreal and Cryptic Experience where 
