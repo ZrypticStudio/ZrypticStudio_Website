@@ -1,0 +1,37 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#0a0418"/><stop offset="0.6" stop-color="#05010f"/><stop offset="1" stop-color="#030305"/></linearGradient>
+    <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5"><stop stop-color="#9ff5ff"/><stop offset="0.55" stop-color="#00e5ff" stop-opacity="0.85"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#171033"/><stop offset="1" stop-color="#080416"/></linearGradient>
+    <pattern id="win" width="18" height="26" patternUnits="userSpaceOnUse"><rect x="4" y="6" width="5" height="8" fill="#00e5ff" opacity="0.5"/><rect x="12" y="16" width="4" height="6" fill="#ff69d5" opacity="0.35"/></pattern>
+    <clipPath id="moonclip"><circle cx="400" cy="300" r="170"/></clipPath>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="300" r="300" fill="url(#moon)" opacity="0.5"/>
+  <circle cx="400" cy="300" r="170" fill="#0af0ff" opacity="0.85"/>
+  <g clip-path="url(#moonclip)">
+    <rect x="230" y="134" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="174" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="214" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="254" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="294" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="334" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="374" width="340" height="9" fill="#05010f" opacity="0.55"/><rect x="230" y="414" width="340" height="9" fill="#05010f" opacity="0.55"/>
+  </g>
+  <circle cx="400" cy="300" r="170" fill="none" stroke="#9ff5ff" stroke-width="2" opacity="0.6"/>
+  <g opacity="0.7">
+    <rect x="30" y="560" width="90" height="440" fill="url(#tower)"/><rect x="30" y="560" width="90" height="440" fill="url(#win)" opacity="0.8"/>
+    <rect x="140" y="620" width="70" height="380" fill="url(#tower)"/><rect x="140" y="620" width="70" height="380" fill="url(#win)" opacity="0.8"/>
+    <rect x="230" y="500" width="100" height="500" fill="url(#tower)"/><rect x="230" y="500" width="100" height="500" fill="url(#win)" opacity="0.8"/>
+    <rect x="350" y="640" width="60" height="360" fill="url(#tower)"/><rect x="350" y="640" width="60" height="360" fill="url(#win)" opacity="0.8"/>
+    <rect x="430" y="540" width="90" height="460" fill="url(#tower)"/><rect x="430" y="540" width="90" height="460" fill="url(#win)" opacity="0.8"/>
+    <rect x="540" y="600" width="80" height="400" fill="url(#tower)"/><rect x="540" y="600" width="80" height="400" fill="url(#win)" opacity="0.8"/>
+    <rect x="640" y="480" width="110" height="520" fill="url(#tower)"/><rect x="640" y="480" width="110" height="520" fill="url(#win)" opacity="0.8"/>
+  </g>
+  <g>
+    <rect x="-20" y="700" width="140" height="300" fill="#060312"/><rect x="-20" y="700" width="140" height="300" fill="url(#win)" opacity="0.5"/>
+    <rect x="150" y="760" width="110" height="240" fill="#060312"/><rect x="150" y="760" width="110" height="240" fill="url(#win)" opacity="0.5"/>
+    <rect x="300" y="720" width="130" height="280" fill="#060312"/><rect x="300" y="720" width="130" height="280" fill="url(#win)" opacity="0.5"/>
+    <rect x="470" y="780" width="100" height="220" fill="#060312"/><rect x="470" y="780" width="100" height="220" fill="url(#win)" opacity="0.5"/>
+    <rect x="600" y="700" width="160" height="300" fill="#060312"/><rect x="600" y="700" width="160" height="300" fill="url(#win)" opacity="0.5"/>
+  </g>
+  <line x1="330" y1="720" x2="330" y2="600" stroke="#1d1440" stroke-width="4"/>
+  <circle cx="330" cy="596" r="6" fill="#ff2d78"/>
+  <rect x="0" y="382" width="800" height="7" fill="#00e5ff" opacity="0.18"/>
+  <rect x="90" y="410" width="620" height="3" fill="#ff69d5" opacity="0.22"/>
+  <rect x="0" y="852" width="800" height="5" fill="#00e5ff" opacity="0.12"/>
+</svg>

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://zrypticstudio.com/sitemap.xml

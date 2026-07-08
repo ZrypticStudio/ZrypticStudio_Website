@@ -1,0 +1,34 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="void" cx="0.5" cy="0.42" r="0.75"><stop stop-color="#0a1220"/><stop offset="0.5" stop-color="#04070d"/><stop offset="1" stop-color="#010102"/></radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5"><stop stop-color="#9ff5ff" stop-opacity="0.5"/><stop offset="0.45" stop-color="#4aa8c0" stop-opacity="0.14"/><stop offset="1" stop-color="#9ff5ff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9ff5ff" stop-opacity="0"/><stop offset="1" stop-color="#9ff5ff" stop-opacity="0.05"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glowFar"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#void)"/>
+  <g stroke="#9ff5ff" opacity="0.06">
+    <path d="M0 860 L330 560 M800 860 L470 560" stroke-width="1.5"/>
+    <path d="M0 980 L310 600 M800 980 L490 600" stroke-width="1"/>
+    <path d="M120 0 L360 420 M680 0 L440 420" stroke-width="1"/>
+  </g>
+  <circle cx="400" cy="440" r="330" fill="url(#halo)"/>
+  <g stroke="#7de9ff" fill="none" opacity="0.5" filter="url(#glowFar)">
+    <ellipse cx="400" cy="440" rx="152" ry="196" stroke-width="30"/>
+    <line x1="400" y1="180" x2="400" y2="700" stroke-width="30" stroke-linecap="round"/>
+  </g>
+  <g stroke="#c8fbff" fill="none" opacity="0.85" filter="url(#glow)">
+    <ellipse cx="400" cy="440" rx="152" ry="196" stroke-width="16"/>
+    <line x1="400" y1="180" x2="400" y2="700" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g stroke="#ffffff" fill="none">
+    <ellipse cx="400" cy="440" rx="152" ry="196" stroke-width="9"/>
+    <line x1="400" y1="180" x2="400" y2="700" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <ellipse cx="400" cy="812" rx="230" ry="26" fill="url(#floor)"/>
+  <g fill="#bdf6ff">
+    <circle cx="216" cy="300" r="2.2" opacity="0.5"/><circle cx="580" cy="250" r="1.6" opacity="0.4"/><circle cx="640" cy="520" r="2.6" opacity="0.45"/><circle cx="170" cy="620" r="1.8" opacity="0.4"/><circle cx="500" cy="720" r="2" opacity="0.35"/><circle cx="320" cy="170" r="1.4" opacity="0.35"/><circle cx="700" cy="380" r="1.5" opacity="0.3"/>
+  </g>
+  <g fill="#9ff5ff"><rect y="238" width="800" height="2" opacity="0.05"/><rect y="612" width="800" height="1.5" opacity="0.04"/><rect y="905" width="800" height="2" opacity="0.05"/></g>
+  <rect width="800" height="1000" fill="url(#void)" opacity="0.35"/>
+</svg>
