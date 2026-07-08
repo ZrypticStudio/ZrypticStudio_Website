@@ -334,3 +334,111 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* ---- CROSS-BROWSER VIEWPORT + WHITE BORDER FIX ADD-ON ---- */
+
+/* Better sizing consistency everywhere */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Prevent browser default gaps and horizontal overflow */
+html {
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  background: #000;
+}
+
+body {
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  background: #000;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Strong full-screen support for Safari, Chrome, Android, Firefox */
+.home-bg,
+.dark-bg,
+.green-bg,
+section,
+main,
+.content-wrapper {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+/* iOS Safari fixed background fallback */
+@supports (-webkit-touch-callout: none) {
+  html,
+  body {
+    min-height: -webkit-fill-available;
+  }
+
+  .home-bg,
+  .dark-bg,
+  .green-bg,
+  section,
+  main,
+  .content-wrapper,
+  nav ul {
+    min-height: -webkit-fill-available;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+}
+
+/* Android Chrome / modern mobile viewport consistency */
+@supports (height: 100dvh) {
+  .home-bg,
+  .dark-bg,
+  .green-bg,
+  section,
+  main,
+  .content-wrapper,
+  nav ul {
+    min-height: 100dvh;
+  }
+}
+
+/* Older browser fallback */
+@supports not (height: 100dvh) {
+  .home-bg,
+  .dark-bg,
+  .green-bg,
+  section,
+  main,
+  .content-wrapper,
+  nav ul {
+    min-height: 100vh;
+  }
+}
+
+/* Prevent tiny right-side gaps caused by 100vw/scrollbar behavior */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile browser safe area support */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Fullscreen menu consistency on all mobile browsers */
+@media (max-width: 768px) {
+  nav ul {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
+  }
+}
